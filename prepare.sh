@@ -8,13 +8,13 @@ ATCODER_URL=https://beta.atcoder.jp/contests/abc$1/tasks/abc$1_
 mkdir -m 777 $1
 
 cp ./sample.cpp ./$1/a.cpp
-cp ./sample.cpp ./$1/b.cpp
-cp ./sample.cpp ./$1/c.cpp
-cp ./sample.cpp ./$1/d.cpp
+cp ./sample2.cpp ./$1/b.cpp
+cp ./sample2.cpp ./$1/c.cpp
+cp ./sample2.cpp ./$1/d.cpp
 
 cd ./$1
 sed -i '' -e s#atcoderURL#"$ATCODER_URL"a# a.cpp
-sed -i '' -e s#atoderURL#"$ATCODER_URL"b# b.cpp
+sed -i '' -e s#atcoderURL#"$ATCODER_URL"b# b.cpp
 sed -i '' -e s#atcoderURL#"$ATCODER_URL"c# c.cpp
 sed -i '' -e s#atcoderURL#"$ATCODER_URL"d# d.cpp
 
