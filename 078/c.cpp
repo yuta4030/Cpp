@@ -91,7 +91,7 @@ li a, b, c;
 string s;
 
 li solve() {
-    return 0;
+    return (1900 * b + (a - b) * 100) * pow(2, b);
 }
 
 int main(void) {
