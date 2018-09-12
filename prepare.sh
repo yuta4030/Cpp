@@ -18,9 +18,9 @@ sed -i '' -e s#atcoderURL#"$ATCODER_URL"b# b.cpp
 sed -i '' -e s#atcoderURL#"$ATCODER_URL"c# c.cpp
 sed -i '' -e s#atcoderURL#"$ATCODER_URL"d# d.cpp
 
-echo "g++ -std=c++11 a.cpp -o a.exe" > compile.sh
-echo "g++ -std=c++11 b.cpp -o b.exe" >> compile.sh
-echo "g++ -std=c++11 c.cpp -o c.exe" >> compile.sh
-echo "g++ -std=c++11 d.cpp -o d.exe" >> compile.sh
+echo "g++ -std=c++11 a.cpp -o a" > compile.sh
+echo "g++ -std=c++11 b.cpp -o b" >> compile.sh
+echo "g++ -std=c++11 c.cpp -o c" >> compile.sh
+echo "g++ -std=c++11 d.cpp -o d" >> compile.sh
 
 bash ./compile.sh
