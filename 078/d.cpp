@@ -2,7 +2,7 @@
 using namespace std;
 
 /*
-    https://beta.atcoder.jp/contests/abc078/tasks/abc078_d
+    https://beta.atcoder.jp/contests/abc078/tasks/arc085_b
 */
 
 #define li long long int
@@ -87,17 +87,24 @@ li x[100100];
 PI dp1[100100];
 PI dp2[100100];
 
-li a, b, c;
+li n, z, w;
 string s;
 
-inline bool solve() {
-    return true;
+li solve() {
+    if (n == 1){
+        return abs(v[0] - w);
+    }
+
+    return abs(v[n - 1] - w) > abs(v[n - 2] - v[n - 1]) ? abs(v[n - 1] - w) : abs(v[n - 2] - v[n - 1]);
 }
 
 int main(void) {
-    cin >> a >> b >> c;
-    cin >> s;
-    cout << (solve() ? "Yes" : "No") << endl;
+    cin >> n >> z >> w;
+    rep(i, n){
+        cin >> v[i];
+    }
+
+    cout << (solve()) << endl;
     return 0;
 }
 
